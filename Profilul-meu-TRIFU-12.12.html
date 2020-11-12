@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>"Profilul meu"</title>
+		<link rel="stylesheet" type="text/css" href="agenda_styles.css">
+		<style>
+			body { background-color: #ccccff; }
+			h1 { color: blue;}
+			h2 { color: blue;}
+			p {color: blue;}
+			
+			table {background-color: #4d4dff;}
+			ul {background-color: #4d4dff;}
+			
+			table,tr,td,ul { border: 5px solid black;}
+			tr:hover {background-color: yellow; }
+			
+			h1 { font-family: Helvetica;
+				font-style: italic ;
+				font-size: 40px;}
+			p { font-family: Helvetica;
+			    font-style: bold;
+				font-size: 18px;}
+				
+			img { border: 4px solid black;
+				border-radius: 12px;
+				width: 250px;
+				display: block;
+				padding: 10px;
+				margin: left;
+				opacity: 0.80;}
+		</style>
+		<script>
+			function veziViitor()
+			{
+				document.getElementById("numeProfil").innerHTML = "Inginer în domeniul IT";
+				document.getElementById("detaliiProfilM").innerHTML;
+				document.getElementById("detaliiProfil").innerHTML;
+						document.getElementById("motoM").innerHTML = "Fight the impossible battles";
+				document.body.style.backgroundColor = "#ffb366";
+				document.getElementById("pozaProfil").src = "poza11.jpeg";
+				document.getElementById("pozaProfil").style.border = "3px solid";
+				document.getElementById("pozaProfil").style.opacity = "0.9";
+				
+				var tabelEducatie = document.getElementById("tabEducatie");
+				tabelEducatie.rows[0].cells[0].innerHTML = "Eventuale experiențe ";
+				tabelEducatie.rows[0].cells[1].innerHTML = "Soluții";
+				tabelEducatie.rows[1].cells[0].innerHTML = "Dezvoltarea abilităților în domeniul IT";
+				tabelEducatie.rows[2].cells[0].innerHTML = "Dezvoltarea abilităților de socializare";
+				tabelEducatie.rows[3].cells[0].innerHTML = " Acumlarea de experiență în domeniul electrotehnicii";
+				tabelEducatie.rows[1].cells[1].innerHTML = "Exesersarea de noi exerciții, probleme sa diverse programe în diferite limbaje de programare";
+				tabelEducatie.rows[2].cells[1].innerHTML = "Participarea la evenimente sau activități care prespun socializarea și interacțini cu alte persoane";
+				tabelEducatie.rows[3].cells[1].innerHTML = "Participarea la cursrile și laboratoare din cadrul universitații";
+				tabelEducatie.rows[0].cells[2].remove();
+				tabelEducatie.rows[1].cells[2].remove();
+				tabelEducatie.rows[2].cells[2].remove();
+				tabelEducatie.rows[3].cells[2].remove();
+				tabelEducatie.rows[4].remove();
+				
+				
+				
+				var par = document.getElementsByTagName("p");
+				var i;
+				for( i = 0; i <par.length; i++)
+				{
+					par[i].style.color = "black";
+				}
+				
+			
+			}
+			function arVarst()
+			{
+				var azi = new Date;
+				var varstMea;
+				
+				var anNasc = document.getElementById("varsta").innerHTML;
+				
+				varstMea = azi.getFullYear() - parseInt(anNasc);
+				
+				document.getElementById("varsta").innerHTML = varstMea;
+			}
+		</script>
+	</head>
+	
+	<body>
+		<div>
+		<center> <h1 id="numeProfil">Trifu Ionuț-Miron</h1>
+		<p> <b id="detaliiProfilM">Nume:</b> Trifu</p>
+		<p> <b id="detaliiProfil">Prenume:</b> Ionuț-Miron</p>
+		
+		<img id="pozaProfil" src="poza.jpg" width="250px" alt="eroare!!  imagine imposibil de redat">
+		
+		<h2 class="sectiuni">Date de contact</h2>
+		<p>E-mail: <a href=""> Trifu.IM.Ionut@utcluj.didatec.ro</a> </p>
+			<p onmouseover = "arVarst()" id = "varsta"> 2002 </p>
+		<p><h2 id="motoM">Munca este singurul instrument al succesului</h2></p>
+		
+		<button onclick="veziViitor()"> Schimbare profil </button>
+		
+		<h2 class="sectiuni">Ce aș dori să aprofundez:</h2>
+			<table id="tabEducatie" >
+				<tr>
+					<th>Disciplina</th>
+					<th>Anul de studiu</th>
+					<th>Link</th>
+				</tr>
+				
+				<tr>
+
+					<td>Circuite integrate digitale</td>
+
+					<td>Anul 2</td>
+
+					<td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/21.pdf">link fișă disciplină</a></td>
+
+				</tr>
+				
+				<tr>
+
+					<td>Bazele electrotehnicii</td>
+
+					<td>Anul 2</td>
+
+					<td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/18.pdf">link fișă disciplină</a></td>
+
+				</tr>
+				
+				<tr>
+
+					<td>Sisteme cu circuite integate analogice</td>
+
+					<td>Anul 3</td>
+
+					<td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/18.pdf">link fișă disciplină</a></td>
+
+				</tr>
+				
+				<tr>
+
+					<td>Instrumentație virtuală</td>
+
+					<td>Anul 4</td>
+
+					<td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/47.pdf">link fișă disciplină</a></td>
+
+				</tr>
+			</table></center>
+			
+			<h2 class="sectiuni">Hobby:</h2>
+			<ul>
+				<li>Citit-filosifie, psihologie</li>
+				<li>Electronică-începător </li>
+				<li>Handbal</li>
+</ul>
+<a class="kinkAgenda" href="file:///C:/Users/Trifu/Desktop/IA-LAB7/LAB%207/ex3/AGENDA%20NOUA.html">Inapoi la agenda</a>
+
+</div>
+</body>
+	
+<!html>	

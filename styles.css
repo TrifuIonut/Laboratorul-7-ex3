@@ -1,0 +1,44 @@
+.mySlides {display:none}
+
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;}
+  
+.linkPag {
+  color: red;
+  font-size: 35px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;}
+.active {   background-color: #717171;}
+
+/* Fading animation */
+.fade {-webkit-animation-name: fade;
+	   -webkit-animation-duration: 1.5s;
+	   animation-name: fade;
+       animation-duration: 1.5s;}
+
+@-webkit-keyframes fade { from {opacity: .4} 
+  to {opacity: 1} }
+
+@keyframes fade {from {opacity: .4} 
+  to {opacity: 1} }
+
+
+
+
+
+
+
+
+
+	<a class="linkAgenda" href="file:///C:/Users/Trifu/Desktop/PROIECT%206%20INFORMATICA%20APLICATA/EXERCITIUL%202/Profilul-meu-TRIFU-111.html">Link către profilul meu</a>
+		<br></br><br></br>
+		<h2 class="sectiuni">Catalogul colegilor</h2>
+		<a class="linkAgenda" href="file:///C:/Users/Trifu/Desktop/PROIECT%206%20INFORMATICA%20APLICATA/EXERCITIUL%202/ex%201.html">link către profilul colegului Andrei Mateș</a><br></br>
+		<a class="linkAgenda" href="file:///C:/Users/Trifu/Desktop/PROIECT%206%20INFORMATICA%20APLICATA/EXERCITIUL%202/Proiect%20web.html">link către profilul colegei Mărieș Diana</a><br><br/>
+		<a class="linkAgenda" href="file:///C:/Users/Trifu/Desktop/PROIECT%206%20INFORMATICA%20APLICATA/EXERCITIUL%202/ZahAndrei.html">link către profilul colegului Zah Andrei</a>
+	
